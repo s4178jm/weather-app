@@ -1,0 +1,65 @@
+.weatherInfo{
+    width:100%;
+     background-size: cover;
+     margin: 0;
+     color:white;
+ }
+ section{
+     font-size: 15px;
+     background-color: gray;
+ }
+ form{
+     font-size: 20px;
+     font-weight: 500;  
+ }
+ section > h2 {
+     color: white;
+     font-weight: 200;
+     text-decoration: none;
+ }
+ input{
+     border-radius: 20px;
+     color:black;
+     font-size: 15px;
+ }
+ input:hover{
+     color: gray;
+ }
+ .img2{
+     height: 100%;
+     width: 100%;
+ }
+ .render > img{
+     border-radius: 20px;
+ }
+ .render > h1,h2{
+     color: black;
+     text-decoration: underline;    
+ }
+ .render{
+     padding-top:50px;
+     margin: 15px;
+ }
+ .render > img {
+     max-width: 320px;
+ }
+ @media (min-width: 768px) and (max-width: 1023px){
+     .img2{
+         border-bottom: 1px white;
+     }
+     .render > img {
+         max-width: 700px;
+     }
+     .render > p{
+         color: black;
+     }
+ }
+ @media (min-width: 1024px){
+     .render > img {
+        max-width: 800px;   
+     }
+     .render > p{
+         
+         border-radius: 10px;
+     }
+ }

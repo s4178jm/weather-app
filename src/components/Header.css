@@ -1,0 +1,42 @@
+.Head{
+    background-color: white;
+    margin: 0;
+    height: 50px; 
+    display: flex;
+    flex: wrap;
+    padding-left: 45px;   
+    text-decoration: none;   
+}
+.openweather{
+    color: black;
+    display: flex;
+    padding-top: 14px;
+    padding-left: 10px;
+    font-size: 20px;   
+    text-decoration: none;
+}
+ div h2 {
+    padding-left: 0px;
+    margin:10px;
+    text-decoration: none;
+    color:black;
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    h2{
+        justify-content: center;
+    }
+    .Head{
+         justify-content: space-evenly;   
+    }
+}
+@media (min-width: 1024px){
+    .Head{
+        justify-content: space-evenly;
+        font-size: 20px;
+    }
+    .openweather{
+        font-size: 20px;
+        text-decoration: none;
+        padding-top: 15px;
+    }
+}

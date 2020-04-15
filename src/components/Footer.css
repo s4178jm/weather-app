@@ -1,0 +1,25 @@
+.Footer{
+    background-color: white;
+    margin: 0;
+    height: 50px; 
+    display: flex;
+    flex: wrap; 
+}
+h2 {
+    font-size: 20px;
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .Footer>h2{
+        padding-left: 300px;
+    }
+}
+@media (min-width: 1024px){
+    .Footer>h2{
+        padding-left: 380px;
+        font-size: 20px;
+        text-decoration: none;    
+    }
+    .Footer{
+        padding-bottom: 19px;
+    }
+}
