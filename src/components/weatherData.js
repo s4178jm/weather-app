@@ -52,6 +52,7 @@ return (
                 <h3>Min Temp:{cityData.main.temp_min} &deg;F</h3>
                 <h3>Max Temp:{cityData.main.temp_max} &deg;F</h3>
                 <h3>Description:{cityData.weather[0].description} </h3>
+                <img src={`http://openweathermap.org/img/wn/${cityData.weather[0].icon}@2x.png`} /> 
             </div>
         </section>
     </div>
