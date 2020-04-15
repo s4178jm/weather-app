@@ -25,8 +25,13 @@ function Weather(props){
 
     const handleChange = e => {
         setInput(e.target.value)
-      };
-      console.log("WeatherInfo - props", props);
+    };
+    console.log("WeatherInfo - props", props);
+    
+    let cityWeater = {
+
+    }
+if(cityData.name){
 return (
     <div className = "weatherInfo">
         <section>
@@ -40,18 +45,42 @@ return (
                 />
                 <input type="submit" value="submit" />
             </form>
-    
             <div className = "render">
                 <h1>here is info</h1>
                 <h2>city: {cityData.name} </h2>
-                {/* <h3>temp: {cityData.main.temp}</h3> 
+                <h3>temp: {cityData.main.temp}</h3> 
                 <h3>Min Temp:{cityData.main.temp_min} &deg;F</h3>
                 <h3>Max Temp:{cityData.main.temp_max} &deg;F</h3>
-                <h3>Description:{cityData.weather[0].description} </h3> */}
+                <h3>Description:{cityData.weather[0].description} </h3>
             </div>
         </section>
     </div>
     );
- }     
-
- export default Weather;
+ } else { 
+    return (
+        <div className = "weatherInfo">
+        <section>
+            <form onSubmit={handleSubmit}>
+                Zip Code
+                <input
+                id="cityTitle"
+                type="text"
+                value={input}
+                onChange={handleChange}
+                />
+                <input type="submit" value="submit" />
+            </form>
+            <div className = "render">
+            <h1>here is info</h1>
+        <h2>city: N/A </h2>
+        <h3>temp: N/A</h3> 
+        <h3>Min Temp: N/A &deg;F</h3>
+        <h3>Max Temp:N/A &deg;F</h3>
+        <h3>Description:N/A </h3>
+            </div>
+        </section>
+    </div>
+    )
+}
+}
+export default Weather;
