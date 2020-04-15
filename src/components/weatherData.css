@@ -25,13 +25,6 @@
  input:hover{
      color: gray;
  }
- .img2{
-     height: 100%;
-     width: 100%;
- }
- .render > img{
-     border-radius: 20px;
- }
  .render > h1,h2{
      color: black;
      text-decoration: underline;    
@@ -40,24 +33,12 @@
      padding-top:50px;
      margin: 15px;
  }
- .render > img {
-     max-width: 320px;
- }
  @media (min-width: 768px) and (max-width: 1023px){
-     .img2{
-         border-bottom: 1px white;
-     }
-     .render > img {
-         max-width: 700px;
-     }
      .render > p{
          color: black;
      }
  }
  @media (min-width: 1024px){
-     .render > img {
-        max-width: 800px;   
-     }
      .render > p{
          
          border-radius: 10px;
